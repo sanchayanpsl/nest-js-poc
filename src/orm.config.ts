@@ -11,7 +11,7 @@ module.exports = {
   // database: "nest_crud",
     type: 'postgres',
     host: 'db',
-    port: 5436,
+    port: 5432,
     username: 'postgres',
     password: 'postgres',
     database: 'postgres',
