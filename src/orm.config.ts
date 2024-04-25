@@ -8,7 +8,7 @@ module.exports = {
   port: 5432,
   username: "postgres",
   password: "postgres",
-  database: "nest-crud",
+  database: "nest_crud",
   namingStrategy: new SnakeNamingStrategy(),
   logging: true,
   autoLoadEntities: true,
