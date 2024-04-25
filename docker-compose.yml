@@ -1,0 +1,16 @@
+volumes:
+  postgres:
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+    healthcheck:
+      test: pg_isready
+    volumes:
+      - postgres:/data/nest_crud
+    ports:
+      - 5432:5432
+    restart: on-failure
