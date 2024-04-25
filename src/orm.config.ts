@@ -4,7 +4,7 @@ import { join } from "path";
 
 module.exports = {
   type: "postgres",
-  host: "localhost",
+  host: "10.0.0.5",
   port: 5432,
   username: "postgres",
   password: "postgres",
