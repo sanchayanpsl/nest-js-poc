@@ -2,7 +2,7 @@ import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { TenantsModule } from "./modules/public/tenants/tenants.module";
 import { TenancyModule } from "./modules/tenancy/tenancy.module";
-import { CatsModule } from "./modules/tenanted/cats/user.module";
+import { UsersModule } from "./modules/tenanted/users/user.module";
 import { ProductModule } from "./modules/tenanted/products/product.module";
 
 import * as ormconfig from "./orm.config";
@@ -21,7 +21,7 @@ import * as ormconfig from "./orm.config";
     TypeOrmModule.forRoot(ormconfig),
     TenantsModule,
     TenancyModule,
-    CatsModule,
+    UsersModule,
     ProductModule,
   ],
 })
